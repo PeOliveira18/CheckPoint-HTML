@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Oliveira">
+    <title>CheckPoint</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <h1>Vinheria Agnello</h1>
+                <img src="/images/pesquisa.png" alt="Logo de busca" class="icones">
+                <button id ="login" onclick="login()"><img src="/images/usuario.png" alt="" class="icones"></button>
+                <button id="logoCarrinho" onclick="calculadora()"><img src="/images/carrinho.png" alt="Logo de compra" class="icones"></button>
+            </nav>
+            <div class="primeira">
+                <img src="/images/capa.webp" alt="Imagem de vinhos" id="capa">
+                <div class="subtitulo">
+                    <h2>Vinhos exclusivos em promocao</h2>
+                </div>  
+            </div>
+            <div class="preferencia">
+                <img src="/images/vinho-tinto.webp" alt="Vinho Tinto">
+                <div class="textoSobreImagem">
+                    <p>Tinto</p>
+                </div>    
+                <img src="/images/vinho-branco.jpg" alt="Vinho Branco">
+                <div class="textoSobreImagem">
+                    <p>Tinto</p>
+                </div>    
+                <img src="/images/vinho-rose.jpg" alt="Vinho Rose">
+                <div class="textoSobreImagem">
+                    <p>Tinto</p>
+                </div>    
+                <img src="/images/vinho-espumante.jpg" alt="Vinho Espumante">
+                <div class="textoSobreImagem">
+                    <p>Tinto</p>
+                </div>    
+            </div>
+            <div class="buscaVinhos">
+                <img src="/images/esquerda.png" alt="Icone de passar a esquerda">
+                <div class="primeiroVinho">
+                    <div class="fundoAmarelo">
+
+                    </div>
+                    <img src="/images/vinho1.webp" alt="Primeiro Vinho">
+                    <p>Bucci</p>
+                    <p>R$174,99</p>
+                    <button><a href="/HTML/vinhoBucci.html" class="paginaVinhos">Descricao</a></button>
+                    <label for="quantidadeBucci">Quantidade</label>
+                    <input type="number" id="quantidadeBucci" min="0" value="0">
+                    <button onclick="calculadora()">Adicionar ao carrinho</button>
+                </div>
+                <br>
+                <div class="segundoVinho">
+                    <div class="fundoRoxo">
+
+                    </div>
+                    <img src="/images/vinho2.webp" alt="Segundo Vinho">
+                    <p>Amarone Della Valpolicella</p>
+                    <p>R$791,00</p>
+                    <button><a href="/HTML/vinhoAmarone.html" class="paginaVinhos">Descricao</a></button>
+                    <label for="quantidadeAmarone">Quantidade:</label>
+                    <input type="number" id="quantidadeAmarone" min="0" value="0">
+                    <button onclick="calculadora()">Adicionar ao carrinho</button>
+                    
+                    
+                </div>
+                <br>
+                <div class="terceiroVinho">
+                    <div class="fundoroRosa">
+
+                    </div>
+                    <img src="/images/vinho3.jpg" alt="Terceiro vinho Vinho">
+                    <p>Casa Perini</p>
+                    <p>R$49,99</p>
+                    <button><a href="/HTML/vinhoPerini.html" class="paginaVinhos">Descricao</a></button>
+                    <label for="quantidadePerini">Quantidade</label>
+                    <input type="number" id="quantidadePerini" min="0" value="0">
+                    <button onclick="calculadora()">Adicionar ao carrinho</button>
+                </div>
+                <br>
+                <img src="/images/direita.png" alt="Icone de passar a direita">
+                <p id="precoTotal">Preco total do carrinho: R$0.00</p>
+                <label for="cupomDesconto">Cupom de desconto:</label>
+                <input type="text" id="cupomDesconto">
+                <button onclick="aplicarDesconto()">Aplicar desconto</button>
+            </div>
+            <div class="clube">
+                <div class="descricaoClube">
+                    <h3>Clube Agnello</h3>
+                    <p>Faca parte do programa de associados da vinheria e ganhe vantagens unicas!</p>
+                    <button>Saiba mais</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <footer>
+        <div class="duvidas">
+            <h4>Duvidas</h4>
+            <ul>
+                <li>Politica de privacidade</li>
+                <li>Termos e Condicoes</li>
+                <li>Informacoes de Delivery</li>
+                <li>Politica de Cancelamento</li>
+                <li>Cookies</li>
+            </ul>
+        </div>
+        <div class="contato">
+            <h4>Contate-nos</h4>
+            <ul>
+                <li>(19)3286-9627</li>
+                <li>vinheriaagnello@gmail.com</li>
+            </ul>
+        </div>
+        <div class="midia">
+            <h4>Midia</h4>
+            <img src="/images/instagram.png" alt="Logo Instagram">
+            <img src="/images/facebook.png" alt="Logo Facebook">
+            <img src="/images/telegram.png" alt="Logo Telegram">
+            <p>Copyright © 2024. Todos os direitos reservados.</p>
+        </div>
+        <div class="novidade">
+            <h4>Receba novidades no email ou WhatsApp</h4>
+            <label for="email">Digite seu email</label>
+            <input type="email" id="email">
+            <br><br>
+            <label for="celular">Digite seu celular</label>
+            <input type="text" id="celular">
+            <br><br>
+            <button onclick="enviarFormulario()">Salvar dados</button>
+        </div>
+    </footer>
+
+    <script src="/JS/app.js"></script>
+</body>
+</html>

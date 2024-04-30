@@ -1,0 +1,28 @@
+.icones{
+    width: 30px;
+    height: 30px;
+}
+
+#capa{
+    width: fit-content;
+    height: 400px;
+}
+
+#login{
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.paginaVinhos{
+    text-decoration: none;
+    color: black;
+}
+
+#logoCarrinho{
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
