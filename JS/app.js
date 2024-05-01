@@ -68,6 +68,6 @@ function enviarFormulario(){
 
 
 
-// verificacaoIdade()
+verificacaoIdade()
 
 
